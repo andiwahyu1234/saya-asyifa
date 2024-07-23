@@ -1,0 +1,29 @@
+<?php // <?: pembuka skrip PHP.
+if ($_SERVER["REQUEST_METHOD"] == "POST") // memeriksa apakah metode permintaan adalah POST.
+echo "<h2>Hasil Formulir</h2>";
+echo "Nama: " . htmlspecialchars($nama) . "<br>"; // menampilkan nama yang diambil dari formulir.
+                                                 // menggunakan htmlspecialchars untuk menghindari xss.
+echo "Umur: ". htmlspecialchars(umur)   . "tahun<br>"; // menampilkan umur yang diambil dari formulir
+
+echo"<h3>Buah Favorit</h3>";
+if (!empty($buah_favorit)) // memeriksa apakah array buah favorit tidak kosong.
+    foreach ($buah_favorit as $buah) { // mengulangi setiap buah favorit yang dipilih.
+         echo "- " . htmlspecialchars($buah) . "<br>"; // menampilkan buah favorit yang di pilih.
+         $total_harga += $harga_buah[$buah]; // menambahkan harga buah yang dipilih ke total harga.
+    }
+    echo "Total Harga: Rp" . $total_harga . "<br>"; // menampilkan total harga buah favorit yang dipilih.
+} else { // jika tidak ada buah favorit yang dipilih.
+    echo "tidak ada buah favorit yang dipilih.<br>"; // menampilkan pesan bahwa tidak ada buah favorit yang dipilih.
+}
+
+echo "<h3>>Operator Aritmatika</h3>";
+echo " jumlah (x + y): " . $jumlah . "<br>"; // menampilkan hasil dari penjumlahan
+echo " kurang (x - y): " . $kurang . "<br>"; // menampilkan hasil dari pengurangan
+echo " kali (x * y): " . $kali . "<br>"; // menampilkan hasil dari perkalian
+echo " Bagi (x / y): " . $bagi . "<br>"; // menampilkan hasil dari pembagian
+
+echo "<h3>Operator Pembanding</h3>";
+echo "x == y: " . ($x_sama_y ? 'true' : 'false') . "<br>"; // menampilkan hasil dari perbandingan sama dengan $y.
+echo "x != y: " . ($x_tidak_sama_y ? 'true': 'false') . "<br>"; // Menampilkan hasil dari perbandingan tidak sama dengan $y.
+echo "x < y: " . ($x_kurang_y ? 'true' : 'false') . "<br>"; // 
+

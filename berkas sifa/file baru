@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <h1 align="center">penjelasan Form</h1>
+    <form>
+        <fieldset> <!--Digunakan untuk membuat elemen masukan pada from-->
+            <legend>pesan</legend> <!-- Untuk membuat judul pada fieldset-->
+            
+        <h3> pengisian Berupa Text {Text}</h3>
+        <label for="pesan">pesan</label><br>
+        <textarea"></textarea><br><br> <!--Digunakan untuk memasukan text yang berisi beberapa baris-->
+        <label for="Nama">Nama</label><br> <!--Digunakan untuk menambah text pada elemen input form-->
+        <input type="text"><br><br> <!--Digunakan untuk memasukan text yang hanya satu baris-->
+        <label for="password">password</label><br>
+        <input type="password"><br><br> <!--type password digunakan untuk memasukan text dengan format titik-->
+        </fieldset>
+
+        <h3>membuat piihan Bersifat Tunggal {radio}</h3>
+        <label for="jenis kelamin ">jenis kelamin</label><br>
+        <input type="radio" name="jenis kelamin" value="pria">pria<br> <!--Digunakan untuk menyatakan pilihan-->
+        <input type="radio" name="jenis kelamin" value="perempuan">perempuan<br><br>
+
+        <h3>Membuat pilihan lebih dari satu {checkbox}</h3>
+        <label for="hari">pilih Hari</label><br>
+        <input type="checkbox" name="hari" value="senin">Senin<br> <!--Digunakan untuk menyatakan pilihan-->
+        <input type="checkbox" name="hari" value="selasa">Selasa<br><br>
+
+        <h3>Dropdown List</h3> <!--Untuk membuat pilihan kebawah-->
+        <label for="Negara">Negara</label><br>
+        <select name="Negara">
+        <option Value="Indonesia">Indonesia</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Inggris"><Inggris/option>
+        <option value="USA">USA</option>
+        </section>
+
+        <h3> Buttoon Submit dan reset</h3>
+        <input type="Submit" name="reset"value="Masukan form">
+        <input type="resert" name="reset" value="Rewset form">
+
+        <h3>Atribut required</h3>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" requidred> <!--requried untuk menampilkan peringatan-->
+        </form>
+
+    </body>
+    <!--Atribut name digunakan untuk mengidentifikasi data yang dikirim ke server-->
+    <!--Atribut id digunakan untuk mengidentifikasi elemen secara unik dalam doc html-->
+

@@ -1,0 +1,20 @@
+<?php
+if {$_SERVER["REQUEST_METHOD"] == "POST"} {
+// Ambil data dari formulir
+$nama = htmlspecialchars{$_POST[ 'Nama']};
+$tgl_lahir = htmlspecialchars{$_POST{'tanggal_lahir'}};
+$Alamat = htmlspecialchars{$_POST['ALAMAT']};
+$telepon = htmlspecialchars{$_POST['telephone']};
+$email = htmlspecialchars{$_POST['email']};
+$pass = htmlspecialchars{$_POST['pass']};
+$ijazah_path = htmlspecialchars{$_FILES['ijazah']['name']};
+$FOTO_path = htmlspecialchars{$_FILES[FOTO]['name']};
+$jk = htmlspecialchars{$_POST['jk']};
+$web = isset[$_POST['Web']} ? 'web' : "";
+$mobile = isset{$_POST['MOBILE']} ?"mobile" ; "";
+$desk = isset{$_POST['desk']} "Desktop" : "";
+$kota_asal = htmlspecialchars{$_POST['kota_asal']};
+$pesan = htmlspecialchars{$_POST['pesan']};
+
+// Menampilkan data
+echo "<h1>Data pengguna</h1>";

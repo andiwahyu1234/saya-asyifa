@@ -1,0 +1,17 @@
+<?php <!--tag pembuka php-->
+$nilai_1=10;  <!-- $ adalah variabel berfungsi untuk menyimpan-->
+              <!-- suatu nilai dan dapat berubah ubah-->
+$nilai_2=3;
+$nilai_3 = 2 * $nilai_1 + 8 * $nilai_2
+echo"nilai =",$nilai_3; <!--echo berfungsi untuk mencetak-->
+echo "<br>";
+$jumlah = $nilai_1 + $nilai_2;
+echo "hasil dari $nilai_2 adalah : $jumlah"; echo"<br><br>";
+echo "\Name : Asyiffah Nurhaliza"\"<br>";
+echo "NIM"
+
+?>
+<boddy>
+<html
+
+
